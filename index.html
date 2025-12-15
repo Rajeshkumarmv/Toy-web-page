@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToyLand - Premium Toys for Every Child</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="fas fa-horse"></i>
+                    <span>ToyLand</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search toys...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to ToyLand</h1>
+            <p>Discover a world of fun and excitement with our amazing collection of toys for every child!</p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Shop Now</button>
+                <button class="btn-secondary">View Catalog</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://st2.depositphotos.com/3243153/11791/i/950/depositphotos_117913846-stock-photo-kids-playing-with-colorful-toy.jpg" alt="Children Playing with Toys">
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" data-category="action">
+                    <div class="category-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Action Figures</h3>
+                    <p>Heroes & adventures</p>
+                </div>
+                <div class="category-card" data-category="vehicles">
+                    <div class="category-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Vehicles</h3>
+                    <p>Cars, trains & more</p>
+                </div>
+                <div class="category-card" data-category="dolls">
+                    <div class="category-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Dolls & Plush</h3>
+                    <p>Soft friends forever</p>
+                </div>
+                <div class="category-card" data-category="building">
+                    <div class="category-icon">
+                        <i class="fas fa-cubes"></i>
+                    </div>
+                    <h3>Building Blocks</h3>
+                    <p>Create & construct</p>
+                </div>
+                <div class="category-card" data-category="outdoor">
+                    <div class="category-icon">
+                        <i class="fas fa-sun"></i>
+                    </div>
+                    <h3>Outdoor Play</h3>
+                    <p>Active fun outside</p>
+                </div>
+                <div class="category-card" data-category="vehicles">
+                    <div class="category-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Toy Planes</h3>
+                    <p>Flying adventures</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Products</h2>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="action">Action</button>
+                    <button class="filter-btn" data-filter="vehicles">Vehicles</button>
+                    <button class="filter-btn" data-filter="dolls">Dolls</button>
+                    <button class="filter-btn" data-filter="building">Building</button>
+                    <button class="filter-btn" data-filter="outdoor">Outdoor</button>
+                </div>
+            </div>
+            <div class="product-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="deals">
+        <div class="container">
+            <h2>Hot Deals</h2>
+            <div class="deals-grid">
+                <div class="deal-card">
+                    <div class="deal-badge">-30%</div>
+                    <img src="https://m.media-amazon.com/images/I/81nyY7mddVL._AC_SL1500_.jpg" alt="Children Building">
+                    <h3>Mega Building Set</h3>
+                    <div class="price">
+                        <span class="old-price">$89.99</span>
+                        <span class="new-price">$62.99</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">-25%</div>
+                    <img src="https://m.media-amazon.com/images/I/91Y2edldmiL._AC_SL1500_.jpg" alt="Child Playing with Action Figures">
+                    <h3>Superhero Action Pack</h3>
+                    <div class="price">
+                        <span class="old-price">$49.99</span>
+                        <span class="new-price">$37.49</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="deal-card">
+                    <div class="deal-badge">-40%</div>
+                    <img src="https://i.etsystatic.com/42441212/r/il/e685ba/5331563584/il_fullxfull.5331563584_el1j.jpg" alt="Child Playing with Cars">
+                    <h3>Racing Car Bundle</h3>
+                    <div class="price">
+                        <span class="old-price">$79.99</span>
+                        <span class="new-price">$47.99</span>
+                    </div>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Get the latest deals and new product alerts</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About ToyLand</h3>
+                    <p>Your trusted destination for quality toys that inspire creativity and learning.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#deals">Deals</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone"></i> 1-800-TOYS</p>
+                    <p><i class="fas fa-envelope"></i> info@toyland.com</p>
+                    <p><i class="fas fa-clock"></i> Mon-Fri: 9AM-6PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ToyLand. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: $0.00</span>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
